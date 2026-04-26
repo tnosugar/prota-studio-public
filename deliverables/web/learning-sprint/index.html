@@ -5,27 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Learning Sprint by Prota Studios. Validate for the agentic age.</title>
 <meta name="description" content="Prota's Validate program, productized for teams shipping with AI. Kill-or-commit decisions in weeks, not quarters." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../brand/assets/prota-favicon-small.png" />
+<link rel="apple-touch-icon" href="../../../brand/assets/prota-brandmark-favicon-large.png" />
+<meta property="og:title" content="Learning Sprint by Prota Studios. Validate for the agentic age." />
+<meta property="og:description" content="Prota's Validate program, productized for teams shipping with AI. Kill-or-commit decisions in weeks, not quarters." />
+<meta property="og:image" content="https://cdn.prod.website-files.com/6714145300c4bdab5926bdb8/693be24a6fe74f0709d5c731_Prota-OpenGraph.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
 <style>
+  /* prota-studio brand palette (extracted from protastudios.com 2026-04-26).
+     Variable names preserved; values mapped to the brand. See brand/assets/palette.json. */
   :root {
-    --navy: #1F3864;
-    --navy-dark: #0F1F3D;
-    --teal: #00695C;
-    --teal-mid: #00897B;
-    --teal-light: #E0F2F1;
-    --gray-50: #F7F9FC;
-    --gray-100: #F0F3F7;
-    --gray-200: #E3E8EF;
-    --gray-300: #CBD2DC;
-    --gray-600: #546E7A;
-    --body: #212121;
-    --accent: #B71C1C;
-    --white: #FFFFFF;
+    --navy: #0c0407;        /* was: dark navy. Now: brand black-900 (near-black) for headings. */
+    --navy-dark: #000000;   /* deepest. */
+    --teal: #487588;        /* was: emerald teal. Now: brand --prota-blue, the primary accent. */
+    --teal-mid: #5c8a9e;    /* lighter prota-blue (mid). */
+    --teal-light: #e8eef1;  /* very light prota-blue tint for soft section backgrounds. */
+    --gray-50: #f9f9f9;     /* brand --black-50 — light-section background. */
+    --gray-100: #f4f4f4;    /* brand --gray-1. */
+    --gray-200: #e5e5e5;    /* brand --black-100 — light borders. */
+    --gray-300: #b3b3b3;    /* brand --black-300. */
+    --gray-600: #666;       /* brand --black-600 — body text. */
+    --body: #333;           /* brand --black-800 — strong body. */
+    --accent: #b39d63;      /* brand --gold — secondary accent (rare). */
+    --white: #ffffff;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Arial, sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     color: var(--body);
     line-height: 1.55;
     background: var(--white);
@@ -279,7 +291,13 @@
 <!-- TOP NAV -->
 <nav class="top">
   <div class="container inner">
-    <div class="brand">Prota Studios <span>|</span> Learning Sprint</div>
+    <div class="brand">
+      <a href="https://www.protastudios.com/" style="display: inline-flex; align-items: center; text-decoration: none; color: var(--navy);">
+        <img src="../../../brand/assets/Prota_Studios_logo.png" alt="Prota Studios" style="height: 28px; margin-right: 12px;" />
+        <span style="color: var(--gray-300); font-weight: 400; margin-right: 12px;">|</span>
+        <span style="font-weight: 600;">Learning Sprint</span>
+      </a>
+    </div>
     <a href="#contact" class="cta">Book a call</a>
   </div>
 </nav>
